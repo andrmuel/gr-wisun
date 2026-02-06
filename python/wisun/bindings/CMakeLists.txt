@@ -24,7 +24,8 @@ include(GrPybind)
 # Python Bindings
 ########################################################################
 
-list(APPEND wisun_python_files python_bindings.cc)
+list(APPEND wisun_python_files
+    correlate_sync_word_bb_python.cc python_bindings.cc)
 
 gr_pybind_make_oot(wisun ../../.. gr::wisun "${wisun_python_files}")
 

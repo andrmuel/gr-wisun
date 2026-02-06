@@ -11,7 +11,8 @@
 ########################################################################
 include(GrPlatform) #define LIB_SUFFIX
 
-list(APPEND wisun_sources)
+list(APPEND wisun_sources
+    correlate_sync_word_bb_impl.cc)
 
 set(wisun_sources
     "${wisun_sources}"

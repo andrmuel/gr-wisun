@@ -9,4 +9,5 @@
 ########################################################################
 # Install public header files
 ########################################################################
-install(FILES api.h DESTINATION include/gnuradio/wisun)
+install(FILES api.h
+    correlate_sync_word_bb.h DESTINATION include/gnuradio/wisun)
