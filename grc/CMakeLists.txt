@@ -7,4 +7,5 @@
 #
 
 install(FILES
-    wisun_correlate_sync_word_bb.block.yml DESTINATION share/gnuradio/grc/blocks)
+    wisun_correlate_sync_word_bb.block.yml
+    wisun_packet_data_gate_bb.block.yml DESTINATION share/gnuradio/grc/blocks)
