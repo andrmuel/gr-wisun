@@ -14,7 +14,7 @@
 /* BINDTOOL_GEN_AUTOMATIC(1)                                                       */
 /* BINDTOOL_USE_PYGCCXML(0)                                                        */
 /* BINDTOOL_HEADER_FILE(data_whitening_bb.h)                                        */
-/* BINDTOOL_HEADER_FILE_HASH(c8d57bffbab5a1656933f2d467a310a5)                     */
+/* BINDTOOL_HEADER_FILE_HASH(0a3d95fb0739b8f5d63a388678e65398)                     */
 /***********************************************************************************/
 
 #include <pybind11/complex.h>
@@ -39,7 +39,7 @@ void bind_data_whitening_bb(py::module& m)
         .def(py::init(&data_whitening_bb::make),
            D(data_whitening_bb,make)
         )
-        
+
 
 
 
@@ -49,11 +49,3 @@ void bind_data_whitening_bb(py::module& m)
 
 
 }
-
-
-
-
-
-
-
-

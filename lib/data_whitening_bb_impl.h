@@ -16,7 +16,11 @@ namespace wisun {
 class data_whitening_bb_impl : public data_whitening_bb
 {
 private:
-    // Nothing to declare in this block.
+    std::string d_packet_tag;
+    uint16_t d_header_bits;
+    uint16_t d_header_bits_remaining;
+    uint16_t d_payload_bits_remaining;
+    uint16_t d_pn9_state;
 
 public:
     data_whitening_bb_impl(const std::string packet_tag, const uint16_t header_bits);

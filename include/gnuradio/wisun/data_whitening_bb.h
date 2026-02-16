@@ -15,9 +15,15 @@ namespace gr {
 namespace wisun {
 
 /*!
- * \brief <+description of block+>
+ * \brief Block used to apply data (de-)whitening to the bitstream.
  * \ingroup wisun
  *
+ * This block applies (XORs) the data whitening pattern to the bit stream. As the
+ * operation is symmetrical, the same block can be used for whitening (sender) and
+ * de-whitening (receiver).
+ *
+ * Note: the PN9 used in Wi-SUN does not use the common polynomial x⁹ + x⁵ + 1, but rather
+ * the polynomial x⁹ + x⁴ + 1 (feedback taken from 9th and 4th stage of shift register).
  */
 class WISUN_API data_whitening_bb : virtual public gr::sync_block
 {
@@ -26,6 +32,9 @@ public:
 
     /*!
      * \brief Return a shared_ptr to a new instance of wisun::data_whitening_bb.
+     * \param packet_tag Name tag indicating the start of a new packet
+     * \param header_bits number of PHY header bits in the packet (ignored for data
+     * whitening)
      *
      * To avoid accidental use of raw pointers, wisun::data_whitening_bb's
      * constructor is in a private implementation
