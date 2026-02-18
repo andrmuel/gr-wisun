@@ -8,6 +8,10 @@
  *
  */
 
+/*!
+ * \defgroup wisun Wi-SUN
+ */
+
 #ifndef INCLUDED_WISUN_API_H
 #define INCLUDED_WISUN_API_H
 
