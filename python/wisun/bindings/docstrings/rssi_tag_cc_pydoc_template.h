@@ -15,13 +15,10 @@
  */
 
 
-
- static const char *__doc_gr_wisun_rssi_tag_cc = R"doc()doc";
-
-
- static const char *__doc_gr_wisun_rssi_tag_cc_rssi_tag_cc_0 = R"doc()doc";
+static const char* __doc_gr_wisun_rssi_tag_cc = R"doc()doc";
 
 
- static const char *__doc_gr_wisun_rssi_tag_cc_make = R"doc()doc";
+static const char* __doc_gr_wisun_rssi_tag_cc_rssi_tag_cc_0 = R"doc()doc";
 
-  
+
+static const char* __doc_gr_wisun_rssi_tag_cc_make = R"doc()doc";
