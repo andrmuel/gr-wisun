@@ -16,7 +16,8 @@ list(APPEND wisun_sources
     packet_data_gate_bb_impl.cc
     data_whitening_bb_impl.cc
     pdu_add_pcap_header_impl.cc
-    rssi_tag_cc_impl.cc)
+    rssi_tag_cc_impl.cc
+    power_squelch_relative_cc_impl.cc)
 
 set(wisun_sources
     "${wisun_sources}"

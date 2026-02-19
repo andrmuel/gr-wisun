@@ -14,4 +14,5 @@ install(FILES api.h
     packet_data_gate_bb.h
     data_whitening_bb.h
     pdu_add_pcap_header.h
-    rssi_tag_cc.h DESTINATION include/gnuradio/wisun)
+    rssi_tag_cc.h
+    power_squelch_relative_cc.h DESTINATION include/gnuradio/wisun)
