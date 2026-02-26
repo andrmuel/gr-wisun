@@ -10,12 +10,11 @@
 This is the GNU Radio WISUN module. Place your Python package
 description here (python/__init__.py).
 '''
-import os
 
 # import pybind11 generated symbols into the wisun namespace
 try:
     # this might fail if the module is python-only
-    from .wisun_python import *
+    from .wisun_python import *  # noqa
 except ModuleNotFoundError:
     pass
 
